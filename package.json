@@ -1,0 +1,28 @@
+{
+    "name": "chip8",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "start": "parcel index.html",
+        "build": "parcel build index.html",
+        "build-and-serve": "parcel build index.html && node server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "parcel": "^2.14.4",
+        "parcel-plugin-static-files-copy": "^2.5.0"
+    },
+    "staticFiles": {
+        "staticPath": [
+            {
+                "staticOutDir": "./rom",
+                "staticPath": "rom"
+            }
+        ]
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
